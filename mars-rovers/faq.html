@@ -9,31 +9,41 @@
   <title>FAQ — NASA Mars Rovers</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <a href="index.html" class="nav-brand" aria-label="NASA Mars Rovers — Home">
-  <img src="nasa-bg-removed.png" alt="NASA logo" class="nav-logo">
-  <span class="nav-brand-text">
-    <span class="nav-brand-top">NASA / JPL</span>
-    <span class="nav-brand-bottom">Mars Rovers</span>
-  </span>
-</a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+
+      <a href="index.html" class="nav-brand" aria-label="NASA Mars Rovers Home">
+        <img src="nasa-bg-removed.png" alt="NASA logo" class="nav-logo">
+        <span class="nav-brand-text">
+          <span class="nav-brand-top">NASA / JPL</span>
+          <span class="nav-brand-bottom">Mars Rovers</span>
+        </span>
+      </a>
 
       <ul class="nav-links" id="nav-links" role="list">
         <li><a href="index.html">Home</a></li>
         <li><a href="missions.html">Mission History</a></li>
         <li><a href="faq.html" aria-current="page">FAQ</a></li>
-        <li><a href="https://science.nasa.gov/mars/" target="_blank" rel="noopener noreferrer">NASA Mars ↗</a></li>
+        <li><a href="https://science.nasa.gov/mars/" target="_blank" rel="noopener noreferrer">NASA Mars</a></li>
       </ul>
 
       <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
-        <span></span><span></span><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
+
     </div>
   </nav>
 
   <main id="main-content">
+
     <header class="page-hero">
-      <p class="hero-eyebrow" style="text-align:center;">Got Questions?</p>
+      <p class="hero-eyebrow">Got Questions?</p>
       <h1 class="page-hero-title">Frequently Asked<br>Questions</h1>
       <p class="page-hero-sub">Everything you've wondered about Mars, its rovers, and exploration.</p>
     </header>
@@ -51,7 +61,9 @@
               <span>+</span>
             </button>
             <div class="faq-answer">
-              <p>Mars varies from about 54.6 million km to over 400 million km from Earth. Missions take about 6–9 months.</p>
+              <div class="faq-answer-inner">
+                Mars varies from about 54.6 million km to over 400 million km from Earth. Missions take about 6–9 months.
+              </div>
             </div>
           </div>
 
@@ -61,7 +73,9 @@
               <span>+</span>
             </button>
             <div class="faq-answer">
-              <p>Mars has a thin CO₂ atmosphere (~1% of Earth’s pressure), causing extreme temperatures and high radiation.</p>
+              <div class="faq-answer-inner">
+                Mars has a thin CO₂ atmosphere (~1% of Earth’s pressure), causing extreme temperatures and high radiation.
+              </div>
             </div>
           </div>
 
@@ -71,7 +85,9 @@
               <span>+</span>
             </button>
             <div class="faq-answer">
-              <p>Yes. Evidence includes river valleys, lake beds, and minerals that form in water.</p>
+              <div class="faq-answer-inner">
+                Yes. Evidence includes river valleys, lake beds, and minerals that form in water.
+              </div>
             </div>
           </div>
 
@@ -87,7 +103,9 @@
               <span>+</span>
             </button>
             <div class="faq-answer">
-              <p>They send signals via orbiters or directly to NASA’s Deep Space Network with delays of 3–22 minutes.</p>
+              <div class="faq-answer-inner">
+                They send signals via orbiters or NASA’s Deep Space Network with delays of 3–22 minutes.
+              </div>
             </div>
           </div>
 
@@ -97,7 +115,9 @@
               <span>+</span>
             </button>
             <div class="faq-answer">
-              <p>No. Commands are pre-programmed due to signal delay.</p>
+              <div class="faq-answer-inner">
+                No. Commands are pre-programmed due to signal delay.
+              </div>
             </div>
           </div>
 
@@ -113,7 +133,9 @@
               <span>+</span>
             </button>
             <div class="faq-answer">
-              <p>No confirmed life, but strong evidence Mars was once habitable.</p>
+              <div class="faq-answer-inner">
+                No confirmed life, but Mars shows strong evidence it was once habitable.
+              </div>
             </div>
           </div>
 
@@ -123,7 +145,9 @@
               <span>+</span>
             </button>
             <div class="faq-answer">
-              <p>Possibly in the 2030s–2040s depending on technology and funding.</p>
+              <div class="faq-answer-inner">
+                Possibly in the 2030s–2040s depending on technology and funding.
+              </div>
             </div>
           </div>
 
@@ -131,6 +155,7 @@
 
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
