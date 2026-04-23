@@ -1,0 +1,234 @@
+<!-- was gonna do the light/dark theme stuff but ended up scrapping it so any stuff that looks like light/dark mode implementation is because of that -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Explore NASA's Mars Rover Program, including Spirit, Opportunity, Curiosity, and Perseverance. Learn about their missions and discoveries on Mars.">
+  <meta name="keywords" content="NASA, Mars Rover, Curiosity, Perseverance, Spirit, Opportunity, Mars exploration">
+  <title>NASA Mars Rovers — Robotic Explorers on the Red Planet</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand" aria-label="NASA Mars Rovers Home">
+        <img src="https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo.svg" alt="NASA logo" class="nav-logo">
+        <span class="nav-brand-text">
+          <span class="nav-brand-top">NASA / JPL</span>
+          <span class="nav-brand-bottom">Mars Rovers</span>
+        </span>
+      </a>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="missions.html">Mission History</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="https://science.nasa.gov/mars/" target="_blank" rel="noopener noreferrer">NASA Mars</a></li>
+      </ul>
+
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <section class="hero" aria-labelledby="hero-heading">
+      <p class="hero-eyebrow">NASA Jet Propulsion Laboratory</p>
+      <h1 class="hero-title" id="hero-heading">
+        Mars<br>
+        <span class="accent">Rovers</span>
+      </h1>
+      <p class="hero-tagline">Robotic Explorers on the Red Planet</p>
+
+      <div class="hero-ctas">
+        <a href="missions.html" class="btn btn-primary">Explore Missions</a>
+        <a href="#rovers" class="btn btn-outline">Meet the Rovers</a>
+      </div>
+    </section>
+
+    <div class="stats-bar" role="region" aria-label="Mars Rover Program statistics">
+      <div class="stats-inner">
+        <div class="stat-item">
+          <span class="stat-number">5</span>
+          <span class="stat-label">Rovers Sent</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">30+</span>
+          <span class="stat-label">Years of Exploration</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">225M km</span>
+          <span class="stat-label">Average Distance</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">50+ km</span>
+          <span class="stat-label">Distance Traveled</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="section" id="rovers" aria-labelledby="overview-heading">
+      <div class="section-inner">
+        <p class="section-label">The Fleet</p>
+        <h2 class="section-title" id="overview-heading">Meet the Rovers</h2>
+        <p class="section-subtitle">NASA has sent several rovers to Mars to study its surface, climate, and history.</p>
+
+        <div class="overview-grid" role="list">
+
+          <article class="rover-card" role="listitem">
+            <img class="rover-card-img" src="https://assets.science.nasa.gov/dynamicimage/assets/science/psd/solar/2023/07/rover2-1.jpg?w=1280&h=960&fit=clip&crop=faces%2Cfocalpoint" alt="Spirit rover on the surface of Mars" loading="lazy">
+            <div class="rover-card-body">
+              <p class="rover-card-era">2003 – 2019</p>
+              <h3 class="rover-card-title">Spirit &amp; Opportunity</h3>
+              <p class="rover-card-desc">Twin rovers designed to study Martian rocks and soil. Both lasted far longer than expected and found strong evidence that water once existed on Mars.</p>
+              <a href="missions.html#spirit-opportunity" class="rover-card-link">View Mission</a>
+            </div>
+          </article>
+
+          <article class="rover-card" role="listitem">
+            <img class="rover-card-img" src="https://www.nasa.gov/wp-content/uploads/2026/04/25382-pia24173-1600.jpg" alt="Curiosity rover exploring Mars terrain" loading="lazy">
+            <div class="rover-card-body">
+              <p class="rover-card-era">2011 – Present</p>
+              <h3 class="rover-card-title">Curiosity</h3>
+              <p class="rover-card-desc">A car-sized rover studying Mars’ climate and geology. It confirmed that Mars once had conditions that could support life.</p>
+              <a href="missions.html#curiosity" class="rover-card-link">View Mission</a>
+            </div>
+          </article>
+
+          <article class="rover-card" role="listitem">
+            <img class="rover-card-img" src="https://science.nasa.gov/wp-content/uploads/2024/03/pia26080-truecolor-deepzoom.jpg" alt="Perseverance rover on Mars surface" loading="lazy">
+            <div class="rover-card-body">
+              <p class="rover-card-era">2020 – Present</p>
+              <h3 class="rover-card-title">Perseverance</h3>
+              <p class="rover-card-desc">NASA’s newest rover, searching for signs of ancient life and collecting samples that may be returned to Earth.</p>
+              <a href="missions.html#perseverance" class="rover-card-link">View Mission</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="program-heading">
+      <div class="section-inner">
+        <p class="section-label">The Mission</p>
+        <h2 class="section-title" id="program-heading">Why Explore Mars?</h2>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:2rem; margin-top:2rem;">
+          <div>
+            <h3>Follow the Water</h3>
+            <p>Mars once had liquid water. Studying it helps scientists understand how planets change over time.</p>
+
+            <h3>Search for Life</h3>
+            <p>Rovers look for signs that simple life may have existed on Mars in the past.</p>
+          </div>
+
+          <div>
+            <h3>Prepare for Humans</h3>
+            <p>Rovers test technology and gather information that could help future human missions.</p>
+
+            <h3>Study the Solar System</h3>
+            <p>Mars helps scientists compare planets and learn more about how Earth and others formed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="compare-heading">
+      <div class="section-inner">
+        <p class="section-label">Comparison</p>
+        <h2 class="section-title" id="compare-heading">Rover Specifications</h2>
+
+        <div class="table-wrap">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Specification</th>
+                <th>Spirit</th>
+                <th>Opportunity</th>
+                <th>Curiosity</th>
+                <th>Perseverance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Launch</td>
+                <td>June 2003</td>
+                <td>July 2003</td>
+                <td>Nov 2011</td>
+                <td>July 2020</td>
+              </tr>
+              <tr>
+                <td>Landing</td>
+                <td>Jan 2004</td>
+                <td>Jan 2004</td>
+                <td>Aug 2012</td>
+                <td>Feb 2021</td>
+              </tr>
+              <tr>
+                <td>Power</td>
+                <td>Solar</td>
+                <td>Solar</td>
+                <td>Nuclear</td>
+                <td>Nuclear</td>
+              </tr>
+              <tr>
+                <td>Status</td>
+                <td>Complete</td>
+                <td>Complete</td>
+                <td>Active</td>
+                <td>Active</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-brand-name">Mars Rovers</p>
+        <p class="footer-tagline">Student project about NASA’s Mars Rover Program</p>
+      </div>
+
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="missions.html">Mission History</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="https://science.nasa.gov/mars/" target="_blank">NASA Mars</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <p>Contact:</p>
+        <a href="mailto:grmiller1@ualr.edu">grmiller1@ualr.edu</a>
+      </div>
+    </div>
+
+    <p>
+      This website was created as a student project for educational purposes. NASA is not affiliated with or endorsing this work.
+    </p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', open.toString());
+    });
+  </script>
+</body>
+</html>
