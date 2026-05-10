@@ -3,13 +3,12 @@ $(document).ready(function() {
     $('.fade').slick({
       dots: true,
       infinite: true,
-      speed: 500,
+      speed: 800,
       fade: true,
       slide: 'div',
-      cssEase: 'linear',
+      cssEase: 'ease-in-out',
       autoplay: true,
-      autoplaySpeed: 2000
+      autoplaySpeed: 3000
     });
-
 
 });
